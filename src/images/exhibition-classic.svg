@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Classical sculpture gallery">
+  <rect width="640" height="480" fill="#f5eee7"/>
+  <rect y="340" width="640" height="140" fill="#d8c8bb"/>
+  <path d="M80 80h480v270H80z" fill="#fffaf5"/>
+  <path d="M128 122h120v186H128zM392 122h120v186H392z" fill="#cab6a5"/>
+  <path d="M280 154c0-36 24-62 56-62s56 26 56 62c0 28-13 50-32 60v92h42v45H270v-45h42v-92c-19-10-32-32-32-60z" fill="#fefefe"/>
+  <path d="M284 350h104v34H284z" fill="#b9a392"/>
+  <path d="M216 384h240v36H216z" fill="#9f8775"/>
+  <circle cx="336" cy="145" r="31" fill="#fefefe"/>
+</svg>

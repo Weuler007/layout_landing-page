@@ -6,17 +6,159 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>The Met</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="nav__logo" href="#home">The Met</a>
+
+        <div class="nav__actions">
+          <a class="nav__phone" href="tel:+12125357710">+1 212-535-7710</a>
+          <a class="nav__link" href="#menu">Menu</a>
+        </div>
+      </nav>
+
+      <div class="hero__content">
+        <p class="hero__label">Open today 10 am - 5 pm</p>
+        <h1 class="hero__title">
+          Welcome
+          <br />
+          to The Met
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro" id="menu">
+        <div class="section__eyebrow">Plan your visit</div>
+        <div class="intro__content">
+          <h2 class="section__title">Museum hours</h2>
+
+          <div class="schedule">
+            <article class="schedule__item">
+              <h3 class="schedule__title">The Met Fifth Avenue</h3>
+              <p class="schedule__row">
+                <strong>10 am - 5 pm</strong>
+                Sun, Mon, Tue, Thu
+              </p>
+              <p class="schedule__row">
+                <strong>10 am - 9 pm</strong>
+                Fri, Sat
+              </p>
+              <p class="schedule__closed">Closed on Wednesday</p>
+            </article>
+
+            <article class="schedule__item">
+              <h3 class="schedule__title">The Met Cloisters</h3>
+              <p class="schedule__row">
+                <strong>10 am - 5 pm</strong>
+                Thu - Tue
+              </p>
+              <p class="schedule__closed">Closed on Wednesday</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section exhibitions" id="exhibitions">
+        <div class="section__eyebrow">Now on view</div>
+        <h2 class="section__title">Explore art across centuries</h2>
+
+        <div class="gallery">
+          <article class="gallery__card">
+            <img
+              class="gallery__image"
+              src="src/images/exhibition-classic.svg"
+              alt="Classical sculpture gallery"
+            />
+            <h3 class="gallery__title">Greek and Roman Art</h3>
+            <p class="gallery__text">
+              Marble figures, vessels, and vivid stories from antiquity.
+            </p>
+          </article>
+
+          <article class="gallery__card">
+            <img
+              class="gallery__image"
+              src="src/images/exhibition-modern.svg"
+              alt="Modern painting gallery"
+            />
+            <h3 class="gallery__title">Modern Collection</h3>
+            <p class="gallery__text">
+              Bold color, quiet rooms, and work that still feels electric.
+            </p>
+          </article>
+
+          <article class="gallery__card">
+            <img
+              class="gallery__image"
+              src="src/images/exhibition-cloisters.svg"
+              alt="Cloisters courtyard"
+            />
+            <h3 class="gallery__title">The Cloisters</h3>
+            <p class="gallery__text">
+              Medieval architecture and gardens overlooking the Hudson.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta" id="tickets">
+        <div>
+          <div class="section__eyebrow">Tickets</div>
+          <h2 class="section__title">Make a day of it</h2>
+          <p class="cta__text">
+            Choose a location, reserve your entry time, and step into one of
+            New York's most iconic museums.
+          </p>
+        </div>
+
+        <a class="button" href="https://www.metmuseum.org/visit/plan-your-visit">
+          Plan a visit
+        </a>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <div class="section__eyebrow">Contact us</div>
+          <h2 class="section__title">Have a question?</h2>
+        </div>
+
+        <form class="form">
+          <label class="form__label" for="name">Name</label>
+          <input
+            class="form__field"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+          />
+
+          <label class="form__label" for="email">Email</label>
+          <input
+            class="form__field"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your email"
+          />
+
+          <label class="form__label" for="message">Message</label>
+          <textarea
+            class="form__field form__field--area"
+            id="message"
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+
+          <button class="button button--dark" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
