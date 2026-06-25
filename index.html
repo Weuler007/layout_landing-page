@@ -68,7 +68,7 @@
 
     <aside
       id="menu"
-      class="menu"
+      class="page__menu menu"
     >
       <div class="container">
         <div class="menu__top">
@@ -91,17 +91,26 @@
         </div>
 
         <nav class="menu__nav">
-          <a href="#hours">Museum Hours</a>
+          <a href="#top">Home</a>
+          <a href="#hours">About Us</a>
           <a href="#view">Now On View</a>
-          <a href="#explore">More to Explore</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#explore">Explore Online</a>
+          <a href="#contact">Contacts</a>
         </nav>
 
+        <p class="menu__place">The Met Fifth Avenue</p>
         <a
           class="menu__phone"
           href="tel:+12125357710"
         >
           +1 212-535-7710
+        </a>
+        <p class="menu__place">The Met Cloisters</p>
+        <a
+          class="menu__phone"
+          href="tel:+12129233700"
+        >
+          +1 212-923-3700
         </a>
         <a
           class="menu__call"
@@ -120,7 +129,7 @@
         <div class="container schedule__grid">
           <div>
             <p class="section__label">Plan your visit</p>
-            <h2 class="section__title">Museum Hours</h2>
+            <h2 class="section__title">Museum hours</h2>
           </div>
 
           <div class="schedule__content">
@@ -176,16 +185,20 @@
 
           <article class="exhibition">
             <div class="exhibition__gallery exhibition__gallery--wide">
-              <img
-                class="exhibition__photo"
-                src="./src/images/Layer46@1,5x@2x.png"
-                alt="European paintings gallery"
-              />
-              <img
-                class="exhibition__photo"
-                src="./src/images/Layer47@1,5x.png"
-                alt="Museum sculpture detail"
-              />
+              <a href="#view">
+                <img
+                  class="exhibition__photo"
+                  src="./src/images/Layer46@1,5x@2x.png"
+                  alt="European paintings gallery"
+                />
+              </a>
+              <a href="#view">
+                <img
+                  class="exhibition__photo"
+                  src="./src/images/Layer47@1,5x.png"
+                  alt="Museum sculpture detail"
+                />
+              </a>
             </div>
             <h3>A New Look at Old Masters</h3>
             <p>December 12, 2020 - Through Spring 2023</p>
@@ -193,27 +206,33 @@
 
           <article class="exhibition">
             <div class="exhibition__gallery">
-              <img
-                class="exhibition__photo"
-                src="./src/images/Layer51@1,5x.png"
-                alt="Museum hall"
-              />
-              <img
-                class="exhibition__photo"
-                src="./src/images/Layer49@1,5x.png"
-                alt="Museum artwork"
-              />
+              <a href="#view">
+                <img
+                  class="exhibition__photo"
+                  src="./src/images/Layer51@1,5x.png"
+                  alt="Museum hall"
+                />
+              </a>
+              <a href="#view">
+                <img
+                  class="exhibition__photo"
+                  src="./src/images/Layer49@1,5x.png"
+                  alt="Museum artwork"
+                />
+              </a>
             </div>
             <h3>Bodhisattvas of Wisdom, Compassion, and Power</h3>
             <p>March 27, 2021 - October 30, 2022</p>
           </article>
 
           <article class="exhibition">
-            <img
-              class="exhibition__image"
-              src="./src/images/Group 31.png"
-              alt="Museum installation"
-            />
+            <a href="#view">
+              <img
+                class="exhibition__image"
+                src="./src/images/Group 31.png"
+                alt="Museum installation"
+              />
+            </a>
             <h3>Inspiring Walt Disney: The Animation of French Decorative Arts</h3>
             <p>December 10, 2021 - March 6, 2022</p>
           </article>
@@ -238,11 +257,13 @@
 
           <div class="explore__grid">
             <article class="explore-card">
-              <img
-                class="explore-card__image"
-                src="./src/images/Layer52@1,5x (2).png"
-                alt="Collection area"
-              />
+              <a href="#explore">
+                <img
+                  class="explore-card__image"
+                  src="./src/images/Layer52@1,5x (2).png"
+                  alt="Collection area"
+                />
+              </a>
               <h3>Collection Areas</h3>
               <p>
                 These collection areas study, exhibit, and care for the objects
@@ -251,11 +272,13 @@
             </article>
 
             <article class="explore-card">
-              <img
-                class="explore-card__image"
-                src="./src/images/Layer53@1,5x (2).png"
-                alt="Travel with The Met"
-              />
+              <a href="#explore">
+                <img
+                  class="explore-card__image"
+                  src="./src/images/Layer53@1,5x (2).png"
+                  alt="Travel with The Met"
+                />
+              </a>
               <h3>Travel</h3>
               <p>
                 Travel around the world and across time through thousands of
@@ -264,11 +287,13 @@
             </article>
 
             <article class="explore-card">
-              <img
-                class="explore-card__image"
-                src="./src/images/Layer54@1,5x (2).png"
-                alt="Virtual group tour"
-              />
+              <a href="#explore">
+                <img
+                  class="explore-card__image"
+                  src="./src/images/Layer54@1,5x (2).png"
+                  alt="Virtual group tour"
+                />
+              </a>
               <h3>Virtual Group Tours</h3>
               <p>
                 Request a private guided experience for your class, family, or
@@ -283,74 +308,76 @@
         id="contact"
         class="section contact"
       >
-        <div class="container contact__grid">
-          <h2 class="section__title">Contact Us</h2>
+        <div class="container">
+          <h2 class="section__title contact__title">Contact us</h2>
 
-          <div class="contact__details">
-            <article>
-              <h3>The Met Fifth Avenue</h3>
-              <p>Phone</p>
-              <a
-                class="contact__link"
-                href="tel:+12125357710"
-              >
-                +1 212-535-7710
-              </a>
-              <p>Address</p>
-              <a
-                class="contact__link"
-                href="https://maps.google.com/?q=1000+Fifth+Avenue+New+York"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                1000 Fifth Avenue, New York, NY 10028
-              </a>
-            </article>
+          <div class="contact__grid">
+            <div class="contact__details">
+              <article>
+                <h3>The Met Fifth Avenue</h3>
+                <p>Phone</p>
+                <a
+                  class="contact__link"
+                  href="tel:+12125357710"
+                >
+                  +1 212-535-7710
+                </a>
+                <p>Address</p>
+                <a
+                  class="contact__link"
+                  href="https://maps.google.com/?q=1000+Fifth+Avenue+New+York"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  1000 Fifth Avenue, New York, NY 10028
+                </a>
+              </article>
 
-            <article>
-              <h3>The Met Cloisters</h3>
-              <p>Phone</p>
-              <a
-                class="contact__link"
-                href="tel:+12129233700"
-              >
-                +1 212-923-3700
-              </a>
-              <p>Address</p>
-              <a
-                class="contact__link"
-                href="https://maps.google.com/?q=99+Margaret+Corbin+Drive+New+York"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                99 Margaret Corbin Drive, New York, NY 10040
-              </a>
-            </article>
+              <article>
+                <h3>The Met Cloisters</h3>
+                <p>Phone</p>
+                <a
+                  class="contact__link"
+                  href="tel:+12129233700"
+                >
+                  +1 212-923-3700
+                </a>
+                <p>Address</p>
+                <a
+                  class="contact__link"
+                  href="https://maps.google.com/?q=99+Margaret+Corbin+Drive+New+York"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  99 Margaret Corbin Drive, New York, NY 10040
+                </a>
+              </article>
+            </div>
+
+            <form
+              class="contact__form"
+              onsubmit="this.reset(); return false;"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="John Smith"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="john@email.com"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Tell us how we can help you"
+                required
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
           </div>
-
-          <form
-            class="contact__form"
-            onsubmit="this.reset(); return false;"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button type="submit">Send</button>
-          </form>
         </div>
       </section>
     </main>
