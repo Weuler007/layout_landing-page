@@ -664,7 +664,7 @@ textarea {
 }
 
 .footer {
-  position: sticky;
+  position: relative;
   bottom: 0;
   z-index: -1;
   height: 180px;
@@ -683,3 +683,5 @@ textarea {
     margin: 0 auto;
   }
 }
+
+
