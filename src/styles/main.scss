@@ -21,8 +21,6 @@ body {
 }
 
 .main {
-  position: relative;
-  z-index: 1;
   background: $white;
 }
 
@@ -667,15 +665,18 @@ textarea {
 }
 
 .footer {
-  height: 180px;
-  background-image: url('../images/image3.png');
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  background-image: url('../images/image4.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-width: 744px) {
-    height: 360px;
-    background-image: url('../images/image4.png');
+    min-height: 360px;
   }
 
   @media (min-width: 1260px) {
