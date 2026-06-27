@@ -344,6 +344,10 @@ img {
     line-height: 1;
     text-transform: uppercase;
 
+    span {
+      white-space: nowrap;
+    }
+
     @media (min-width: 744px) {
       font-size: 48px;
     }
@@ -353,6 +357,13 @@ img {
     max-width: 500px;
     margin: 0 auto 40px;
     text-align: center;
+
+    p {
+      font-family: Cinzel, Georgia, serif;
+      font-size: 16px;
+      line-height: 1.7;
+      text-transform: uppercase;
+    }
 
     @media (min-width: 744px) {
       margin-bottom: 48px;
@@ -376,7 +387,7 @@ img {
     }
 
     @media (min-width: 1260px) {
-      grid-template-columns: 411px 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -391,8 +402,22 @@ img {
     gap: 16px;
 
     h3 {
+      font-family: Cinzel, Georgia, serif;
       font-size: 24px;
+      font-weight: 700;
       line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: Cinzel, Georgia, serif;
+      font-size: 14px;
+      line-height: 1.7;
+      text-transform: uppercase;
+
+      @media (min-width: 744px) {
+        white-space: nowrap;
+      }
     }
   }
 
@@ -403,12 +428,13 @@ img {
 
   dl div {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 130px 1fr;
     gap: 24px;
   }
 
   dt {
     font-weight: 700;
+    white-space: nowrap;
   }
 
   dd {
@@ -441,6 +467,14 @@ img {
     &--triple {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    &--narrow-wide {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &--poster {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__photo {
@@ -471,6 +505,11 @@ img {
     @media (min-width: 1260px) {
       height: 320px;
     }
+  }
+
+  &__gallery--poster &__photo {
+    height: auto;
+    object-fit: contain;
   }
 
   h3 {
