@@ -4,6 +4,7 @@ $muted: #7e7e83;
 $field: #f8f8fa;
 $white: #fff;
 
+/* Configurações gerais da página */
 * {
   box-sizing: border-box;
 }
@@ -24,6 +25,7 @@ body {
   background: $white;
 }
 
+/* Quando o menu está aberto, a página de trás não rola */
 .page:has(.page__menu:target) {
   overflow: hidden;
 }
@@ -66,6 +68,7 @@ img {
   }
 }
 
+/* Primeira tela */
 .header {
   position: relative;
   min-height: 100vh;
@@ -109,6 +112,7 @@ img {
     text-transform: uppercase;
     letter-spacing: -1.5px;
 
+    /* Mantém "to The Met" na mesma linha */
     span {
       white-space: nowrap;
     }
@@ -133,6 +137,7 @@ img {
   }
 }
 
+/* Barra superior do header */
 .top-bar {
   display: flex;
   align-items: flex-start;
@@ -166,6 +171,7 @@ img {
   }
 }
 
+/* Ícones de telefone e menu */
 .icon-link {
   width: 24px;
   height: 24px;
@@ -186,6 +192,7 @@ img {
   }
 }
 
+/* Menu lateral: fica escondido até o #menu aparecer na URL */
 .menu {
   position: fixed;
   inset: 0;
@@ -316,6 +323,7 @@ img {
   }
 }
 
+/* Blocos reutilizados pelas seções */
 .section {
   padding: 100px 0 0;
 
@@ -356,6 +364,7 @@ img {
   }
 }
 
+/* Seção de horários */
 .schedule {
   &__grid {
     display: grid;
@@ -407,6 +416,7 @@ img {
   }
 }
 
+/* Galeria de exposições */
 .exhibition {
   margin-bottom: 48px;
 
@@ -430,20 +440,6 @@ img {
 
     &--triple {
       grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  &__image {
-    height: 180px;
-    margin-bottom: 24px;
-    object-fit: cover;
-
-    @media (min-width: 744px) {
-      height: 320px;
-    }
-
-    @media (min-width: 1260px) {
-      height: 324px;
     }
   }
 
@@ -489,6 +485,7 @@ img {
   }
 }
 
+/* Botões principais */
 .button,
 button {
   display: flex;
@@ -517,6 +514,7 @@ button {
   }
 }
 
+/* Cards da seção Explore */
 .explore {
   &__grid {
     display: grid;
@@ -559,6 +557,7 @@ button {
   }
 }
 
+/* Seção de contato */
 .contact {
   padding-bottom: 100px;
 
@@ -643,6 +642,7 @@ button {
   }
 }
 
+/* Campos do formulário */
 textarea {
   min-height: 144px;
   resize: vertical;
@@ -668,11 +668,8 @@ textarea {
   }
 }
 
+/* Rodapé visual com imagem */
 .footer {
-  position: relative;
-  z-index: 0;
-  display: block;
-  width: 100%;
   min-height: 180px;
   background-image: url('../images/image4.png');
   background-repeat: no-repeat;
