@@ -734,6 +734,9 @@ textarea {
 
 /* Rodapé visual com imagem */
 .footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
   min-height: 180px;
   background-image: url('../images/image4.png');
   background-repeat: no-repeat;
