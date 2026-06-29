@@ -79,7 +79,7 @@ img {
   background-size: cover;
 
   @media (min-width: 1260px) {
-    width: 1260px;
+    max-width: 1260px;
     min-height: 840px;
     margin: 0 auto;
   }
@@ -125,12 +125,9 @@ img {
     }
 
     @media (min-width: 1260px) {
-      position: absolute;
-      top: 200px;
-      left: 261px;
       width: 498px;
       max-width: 498px;
-      margin: 0;
+      margin-top: 103px;
       font-size: 80px;
       line-height: 80px;
     }
@@ -423,13 +420,8 @@ img {
 
   dl {
     display: grid;
-    gap: 8px;
-  }
-
-  dl div {
-    display: grid;
     grid-template-columns: 130px 1fr;
-    gap: 24px;
+    gap: 8px 24px;
   }
 
   dt {
