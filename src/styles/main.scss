@@ -6,11 +6,13 @@ $white: #fff;
 $tablet: 744px;
 $desktop: 1260px;
 $desktop-container: 1020px;
+
 $hero-title-size: 116px;
 $hero-title-accent-size: 129px;
 $hero-title-top: calc(38% - 150px);
 $hero-title-shift-x: calc(-50% - 75px);
 $hero-title-shift-y: calc(-50% + 30px);
+
 $nav-logo-shift-x: -520px;
 $nav-logo-shift-y: 70px;
 $nav-icons-shift-x: -491px;
@@ -71,6 +73,7 @@ img {
 }
 
 .container {
+
   width: min(100% - 40px, 1020px);
   margin: 0 auto;
 
@@ -78,8 +81,9 @@ img {
     width: min(100% - 144px, 1020px);
   }
 
-  @media (min-width: 1260px) {
-    width: $desktop-container;
+   @media (min-width: 1260px) {
+    max-width: $desktop-container;
+    width: calc(100% - 240px);
   }
 }
 
@@ -146,7 +150,7 @@ img {
 
     @media (min-width: 1260px) {
       position: absolute;
-      top: calc(38% - 150px);
+      top: calc(45% - 150px);
       left: 50%;
       width: 498px;
       max-width: 498px;
@@ -154,7 +158,7 @@ img {
       font-size: 116px;
       line-height: 116px;
       letter-spacing: 1px;
-      transform: translate(calc(-50% - 75px), calc(-50% + 30px));
+      transform: translate(calc(-50% - 75px), calc(-50% + 80px));
 
       &::first-letter {
         font-size: 129px;
@@ -190,11 +194,9 @@ img {
     }
 
     @media (min-width: 1260px) {
-      margin-left: -520px;
-      margin-top: 70px;
-      width: 139px;
-      height: 104px;
-    }
+  width: 139px;
+  height: 104px;
+}
   }
 
   &__icons {
@@ -204,9 +206,8 @@ img {
     margin-top: 6px;
 
     @media (min-width: 1260px) {
-      gap: 105px;
-      margin-top: 105px;
-      margin-right: -491px;
+      gap: 32px;
+
     }
   }
 }
