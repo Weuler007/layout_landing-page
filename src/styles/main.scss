@@ -3,6 +3,23 @@ $ink: #161616;
 $muted: #7e7e83;
 $field: #f8f8fa;
 $white: #fff;
+$tablet: 744px;
+$desktop: 1260px;
+$desktop-container: 1020px;
+
+$hero-title-size: 116px;
+$hero-title-accent-size: 129px;
+$hero-title-top: calc(38% - 150px);
+$hero-title-shift-x: calc(-50% - 75px);
+$hero-title-shift-y: calc(-50% + 30px);
+
+$nav-logo-shift-x: -520px;
+$nav-logo-shift-y: 70px;
+$nav-icons-shift-x: -491px;
+$nav-icons-shift-y: 105px;
+$nav-icon-size: 62px;
+$phone-icon-shift-x: 60px;
+$burger-icon-shift-x: 73px;
 
 /* Configurações gerais da página */
 * {
@@ -64,7 +81,7 @@ img {
   }
 
   @media (min-width: 1260px) {
-    width: min(100% - 240px, 1020px);
+    width: $desktop-container;
   }
 }
 
@@ -79,9 +96,14 @@ img {
   background-size: cover;
 
   @media (min-width: 1260px) {
-    max-width: 1260px;
-    min-height: 840px;
-    margin: 0 auto;
+    aspect-ratio: 1260 / 840;
+    min-height: auto;
+    background-image: url('../images/image_header.png'),
+      url('../images/image_header.png');
+    background-position: center top;
+    background-size:
+      100% auto,
+      100% auto;
   }
 
   &__content {
@@ -96,7 +118,7 @@ img {
     }
 
     @media (min-width: 1260px) {
-      min-height: 840px;
+      min-height: 100%;
       padding-top: 32px;
     }
   }
@@ -125,11 +147,26 @@ img {
     }
 
     @media (min-width: 1260px) {
+      position: absolute;
+      top: calc(38% - 150px);
+      left: 50%;
       width: 498px;
       max-width: 498px;
-      margin-top: 103px;
-      font-size: 80px;
-      line-height: 80px;
+      margin-top: 0;
+      font-size: 116px;
+      line-height: 116px;
+      letter-spacing: 1px;
+      transform: translate(calc(-50% - 75px), calc(-50% + 30px));
+
+      &::first-letter {
+        font-size: 129px;
+      }
+    }
+
+    &-letter {
+      @media (min-width: 1260px) {
+        font-size: 129px;
+      }
     }
   }
 }
@@ -153,6 +190,13 @@ img {
       width: 87px;
       height: 65px;
     }
+
+    @media (min-width: 1260px) {
+      margin-left: -520px;
+      margin-top: 70px;
+      width: 139px;
+      height: 104px;
+    }
   }
 
   &__icons {
@@ -162,8 +206,9 @@ img {
     margin-top: 6px;
 
     @media (min-width: 1260px) {
-      gap: 55px;
-      margin-top: 16px;
+      gap: 105px;
+      margin-top: 105px;
+      margin-right: -491px;
     }
   }
 }
@@ -175,8 +220,8 @@ img {
   transition: transform 0.3s;
 
   @media (min-width: 1260px) {
-    width: 32px;
-    height: 32px;
+    width: 62px;
+    height: 62px;
   }
 
   img {
@@ -186,6 +231,20 @@ img {
 
   &:hover {
     transform: scale(1.12);
+  }
+
+  &--phone {
+    @media (min-width: 1260px) {
+      position: relative;
+      left: 60px;
+    }
+  }
+
+  &:not(.icon-link--phone) {
+    @media (min-width: 1260px) {
+      position: relative;
+      left: 73px;
+    }
   }
 }
 
@@ -328,6 +387,10 @@ img {
     padding-top: 140px;
   }
 
+  @media (min-width: 1260px) {
+    padding-top: 120px;
+  }
+
   &__label {
     color: $accent;
     font-weight: 700;
@@ -384,7 +447,8 @@ img {
     }
 
     @media (min-width: 1260px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 411px 516px;
+      justify-content: space-between;
     }
   }
 
@@ -561,7 +625,7 @@ button {
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 48px;
 
     @media (max-width: 743px) {
@@ -572,7 +636,7 @@ button {
       gap: 56px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1260px) {
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
@@ -656,6 +720,11 @@ button {
       align-items: start;
       gap: 24px;
     }
+
+    @media (min-width: 1260px) {
+      grid-template-columns: 237px 237px 411px;
+      justify-content: space-between;
+    }
   }
 
   &__details {
@@ -666,6 +735,10 @@ button {
       grid-column: span 2;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+    }
+
+    @media (min-width: 1260px) {
+      grid-template-columns: repeat(2, 237px);
     }
 
     h3 {
@@ -748,7 +821,12 @@ textarea {
   }
 
   @media (min-width: 1260px) {
-    max-width: 1260px;
-    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 1260 / 359;
+    min-height: auto;
+    opacity: 1;
+    background-image: url('../images/image4.png');
+    background-position: center;
+    background-size: 100% auto;
   }
 }
